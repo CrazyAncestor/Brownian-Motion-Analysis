@@ -32,7 +32,7 @@ def calculate(particle):
     r2_ave = np.average(r2)
     r2_var = np.var(r2)
 
-    dim = particle[:,4]
+    dim = particle[:,4]/2.
     dim_ave = np.average(dim)
     dim_var = np.var(dim)
     return np.array([r2_ave*(dl**2), r2_var*(dl**2),dim_ave*(dl),dim_var*(dl)])
